@@ -35,7 +35,7 @@
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^2.12"
     },
-    "scripts": {
+    "removed-scripts": {
         "pre-package-install": [
             "@php artisan config:clear"
         ]
