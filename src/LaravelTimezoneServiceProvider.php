@@ -69,12 +69,12 @@ class LaravelTimezoneServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->bind('timezone', Timezone::class);
-
-        $this->mergeConfigFrom(
-            __DIR__ . '/config/timezone.php',
-            'timezone'
-        );
+//        $this->app->bind('timezone', Timezone::class);
+//
+//        $this->mergeConfigFrom(
+//            __DIR__ . '/config/timezone.php',
+//            'timezone'
+//        );
     }
 
     /**
@@ -82,11 +82,11 @@ class LaravelTimezoneServiceProvider extends ServiceProvider
      */
     private function registerEventListener(): void
     {
-        $events = [
-            \Illuminate\Auth\Events\Login::class,
-            \Laravel\Passport\Events\AccessTokenCreated::class,
-        ];
-
-        Event::listen($events, UpdateUsersTimezone::class);
+//        $events = [
+//            \Illuminate\Auth\Events\Login::class,
+//            \Laravel\Passport\Events\AccessTokenCreated::class,
+//        ];
+//
+//        Event::listen($events, UpdateUsersTimezone::class);
     }
 }
