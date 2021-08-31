@@ -43,23 +43,23 @@ class LaravelTimezoneServiceProvider extends ServiceProvider
             __DIR__ . '/config/timezone.php' => config_path('timezone.php'),
         ], 'config');
 
-        // Register a blade directive to show user date/time in their timezone
-        Blade::directive(
-            'displayDate',
-            function ($expression) {
-                $options = explode(',', $expression);
-
-                if (count($options) == 1) {
-                    return "<?php echo e(Timezone::convertToLocal($options[0])); ?>";
-                } elseif (count($options) == 2) {
-                    return "<?php echo e(Timezone::convertToLocal($options[0], $options[1])); ?>";
-                } elseif (count($options) == 3) {
-                    return "<?php echo e(Timezone::convertToLocal($options[0], $options[1], $options[2])); ?>";
-                } else {
-                    return 'error';
-                }
-            }
-        );
+		//        // Register a blade directive to show user date/time in their timezone
+		//        Blade::directive(
+		//            'displayDate',
+		//            function ($expression) {
+		//                $options = explode(',', $expression);
+		//
+		//                if (count($options) == 1) {
+		/*                    return "<?php echo e(Timezone::convertToLocal($options[0])); ?>";*/
+		//                } elseif (count($options) == 2) {
+		/*                    return "<?php echo e(Timezone::convertToLocal($options[0], $options[1])); ?>";*/
+		//                } elseif (count($options) == 3) {
+		/*                    return "<?php echo e(Timezone::convertToLocal($options[0], $options[1], $options[2])); ?>";*/
+		//                } else {
+		//                    return 'error';
+		//                }
+		//            }
+		//        );
     }
 
     /**
