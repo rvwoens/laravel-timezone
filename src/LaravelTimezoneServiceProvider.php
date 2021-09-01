@@ -1,12 +1,12 @@
 <?php
 
-namespace JamesMills\LaravelTimezone;
+namespace Rvwoens\LaravelTimezone;
 
 use Illuminate\Foundation\AliasLoader;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\ServiceProvider;
-use JamesMills\LaravelTimezone\Listeners\Auth\UpdateUsersTimezone;
+use Rvwoens\LaravelTimezone\Listeners\Auth\UpdateUsersTimezone;
 
 class LaravelTimezoneServiceProvider extends ServiceProvider
 {

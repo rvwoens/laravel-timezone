@@ -20,15 +20,15 @@
     },
     "autoload": {
         "psr-4": {
-            "rvwoens\\LaravelTimezone\\": "src/",
-            "rvwoens\\LaravelTimezone\\Database\\Seeds\\": "database/seeds/"
+            "Rvwoens\\LaravelTimezone\\": "src/",
+            "Rvwoens\\LaravelTimezone\\Database\\Seeds\\": "database/seeds/"
 
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "rvwoens\\LaravelTimezone\\LaravelTimezoneServiceProvider"
+                "Rvwoens\\LaravelTimezone\\LaravelTimezoneServiceProvider"
             ]
         }
     },

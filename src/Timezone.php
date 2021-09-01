@@ -1,6 +1,6 @@
 <?php
 
-namespace JamesMills\LaravelTimezone;
+namespace Rvwoens\LaravelTimezone;
 
 use Carbon\Carbon;
 
